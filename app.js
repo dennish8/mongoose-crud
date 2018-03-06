@@ -14,8 +14,10 @@ app.use(bodyParser.json())
 
 const routes_book = require('./routes/books');
 const routes_customer = require('./routes/customers');
+const routes_transaction = require('./routes/transactions');
 
 app.use('/book',routes_book);
 app.use('/customer',routes_customer);
+app.use('/transaction',routes_transaction);
 
 app.listen(3000,()=>console.log(`Listening on port 3000`));
