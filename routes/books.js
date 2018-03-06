@@ -106,7 +106,7 @@ router.delete('/:id',(req,res,next)=>{
     })
     .catch((err)=>{
        re.status(500).json({
-           message: "Unable to delet book"
+           message: "Unable to delete book"
        }) 
     })
 })

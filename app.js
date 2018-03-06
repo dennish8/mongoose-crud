@@ -13,9 +13,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 const routes_book = require('./routes/books');
-
-
+const routes_customer = require('./routes/customers');
 
 app.use('/book',routes_book);
+app.use('/customer',routes_customer);
 
 app.listen(3000,()=>console.log(`Listening on port 3000`));
